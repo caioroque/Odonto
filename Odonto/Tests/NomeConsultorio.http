@@ -1,0 +1,33 @@
+
+###
+//CADASTRAR
+POST https://localhost:5001/odonto/consultorio/create
+Content-Type: application/json
+
+{
+    "NomeConsultorio" : "Consunta paciente x"
+}
+
+###
+//LISTAR
+GET  https://localhost:5001/odonto/consultorio/list
+Content-Type: application/json
+
+###
+//EXCLUIR
+POST https://localhost:5001/odonto/consultorio/delete 
+Content-Type: application/json
+
+{
+    "Id" : 1
+}
+
+###
+//ALTERAR
+POST https://localhost:5001/odonto/consultorio/update
+Content-Type: application/json
+
+{
+    "Id" : 1,
+    "Nome" : "Caio"
+}

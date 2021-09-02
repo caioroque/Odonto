@@ -2,6 +2,7 @@
 //CADASTRAR
 POST https://localhost:5001/odonto/paciente/create
 Content-Type: application/json
+
 {
     "Nome" : "Caio Roque",
     "Cpf" : "2656464",
@@ -9,7 +10,7 @@ Content-Type: application/json
     "Descricao" : "O paciente tem sindrome do impostor",
     "Idade" : 23
 }
-/*
+
 ###
 //LISTAR
 GET  https://localhost:5001/odonto/paciente/list
@@ -19,14 +20,16 @@ Content-Type: application/json
 //EXCLUIR
 POST https://localhost:5001/odonto/paciente/delete 
 Content-Type: application/json
+
 {
-    "Id" : 1 
+   "Id" : 1 
 }
 
 ###
 //ALTERAR
 POST https://localhost:5001/odonto/paciente/update
 Content-Type: application/json
+
 {
     "Id" : 1, 
     "Nome" : "Caio",

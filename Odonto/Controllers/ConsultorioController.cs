@@ -5,13 +5,13 @@ using Odonto.Data;
 using Odonto.Models;
 
 namespace Odonto.Controllers
-{/*
+{
     [ApiController]
     [Route("odonto/consultorio")]  
     public class ConsultorioController : ControllerBase
     {
         private readonly DataContext _context;
-        public ConsultaController(DataContext context)
+        public ConsultorioController(DataContext context)
         {
             _context = context;
         }
@@ -19,7 +19,7 @@ namespace Odonto.Controllers
         //POST: /odonto/consultorio/create
         [Route("create")]
         [HttpPost]
-        public Consultorio Create(Consultorio consulta){
+        public Consultorio Create(Consultorio consultorio){
 
             _context.Consultorios.Add(consultorio);
             _context.SaveChanges();
@@ -47,5 +47,5 @@ namespace Odonto.Controllers
             _context.SaveChanges();
             return consultorio;
         }
-    }*/
+    }
 }

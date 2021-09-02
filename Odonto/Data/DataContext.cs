@@ -11,5 +11,6 @@ namespace Odonto.Data
         //Lista de propriedades de classes de modelo que vão virar as tabelas no banco
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Consulta> Consultas { get; set; }
+        public DbSet<Consultorio> Consultorios  { get; set; }
     }
 }
