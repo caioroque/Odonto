@@ -5,7 +5,7 @@ POST https://localhost:5001/odonto/consulta/create
 Content-Type: application/json
 
 {
-    "Nome_consulta" : "Consunta paciente x",
+    "Nome_consulta" : "Consunta paciente 2",
     "Descricao_Consulta" : "PAciente tem coÇeira anal"
 }
 
@@ -15,8 +15,22 @@ GET  https://localhost:5001/odonto/consulta/list
 Content-Type: application/json
 
 ###
-//EXCLUIR
-POST https://localhost:5001/odonto/consulta/delete 
+//Busca por Id
+GET https://localhost:5001/odonto/consulta/getbyid/1
+
+###
+//ALTERAR
+PUT  https://localhost:5001/odonto/consulta/update
+Content-Type: application/json
+
+{
+    "Id" : 1,
+    "Nome" : "Caio"
+}
+
+###
+//EXCLUIR POR ID
+POST https://localhost:5001/odonto/consulta/deletebyid
 Content-Type: application/json
 
 {
@@ -24,11 +38,5 @@ Content-Type: application/json
 }
 
 ###
-//ALTERAR
-POST https://localhost:5001/odonto/consulta/update
-Content-Type: application/json
-
-{
-    "Id" : 1,
-    "Nome" : "Caio"
-}
+//EXCLUIR POR NOME
+DELETE https://localhost:5001/odonto/consulta/delete/Consunta paciente 2

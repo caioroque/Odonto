@@ -17,21 +17,30 @@ GET  https://localhost:5001/odonto/paciente/list
 Content-Type: application/json
 
 ###
+//Busca por Id
+GET https://localhost:5001/odonto/paciente/getbyid/1
+
+###
 //EXCLUIR
-POST https://localhost:5001/odonto/paciente/delete 
+POST https://localhost:5001/odonto/paciente/deletebyid
 Content-Type: application/json
 
 {
-   "Id" : 1 
+   "Id" : 1
 }
 
 ###
+//EXCLUIR POR NOME
+DELETE https://localhost:5001/odonto/paciente/delete/Caio Roque
+
+
+###
 //ALTERAR
-POST https://localhost:5001/odonto/paciente/update
+PUT https://localhost:5001/odonto/paciente/update
 Content-Type: application/json
 
 {
-    "Id" : 1, 
+    "Id" : 2,
     "Nome" : "Caio",
     "Descricao" : "Have fun, Dont die"
 }
